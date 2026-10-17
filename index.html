@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskFlow</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="app-header">
+        <h1>TaskFlow</h1>
+        <p>Organize the work, see the progress</p>
+    </header>
+
+    <main>
+        <section class="add-card">
+            <input type="text" id="card-input" placeholder="Write the name of new task">
+            <button id="add-btn">Add</button>
+            <p id="error-msg" class="error"></p>
+        </section>
+
+        <section class="board">
+            <div class="column" id="todo-column">
+                <h2>To Do <span class="count">0</span></h2>
+                <div class="card-list" id="todo-list"></div>
+            </div>
+
+            <div class="column" id="inprogress-column">
+                <h2>In Progress <span class="count">0</span></h2>
+                <div class="card-list" id="inprogress-list"></div>
+            </div>
+
+            <div class="column" id="done-column">
+                <h2>Done <span class="count">0</span></h2>
+                <div class="card-list" id="done-list"></div>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
